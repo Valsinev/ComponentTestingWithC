@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Infestation
+﻿namespace Infestation
 {
     public class Weapon : Supplement, ISupplement
     {
         public Weapon()
-            :base(0,0,0)
+            : base(0, 0, 0)
         {
-            this.AggressionEffect = aggEffectAdd;
-            this.PowerEffect = powEffectAdd;
+            this.AggressionEffect = this.AggEffectAdd;
+            this.PowerEffect = this.PowEffectAdd;
         }
 
-        protected int powEffectAdd { get; set; }
-        protected int aggEffectAdd { get; set; }
+        protected int PowEffectAdd { get; set; }
+
+        protected int AggEffectAdd { get; set; }
 
         public override void ReactTo(ISupplement otherSupplement)
         {
             if (otherSupplement is WeaponrySkill)
             {
-                this.aggEffectAdd += 3;
-                this.powEffectAdd += 10;
+                this.AggEffectAdd += 3;
+                this.PowEffectAdd += 10;
             }
         }
     }

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Infestation
+﻿namespace Infestation
 {
+    using System;
+
     public class WeaponrySkill : ISupplement
     {
         public int AggressionEffect { get; protected set; }
@@ -15,7 +12,7 @@ namespace Infestation
 
         public void ReactTo(ISupplement otherSupplement)
         {
-            //Weapon
+            // Weapon
             throw new NotImplementedException();
         }
     }

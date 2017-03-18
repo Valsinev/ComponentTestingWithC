@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Infestation
+﻿namespace Infestation
 {
     public class InfestationSpores : ISupplement
     {
-        
-        private int AggressionEffectConst = 20;
-        private int PowerEffectConst = -1;
+        private int aggressionEffectConst = 20;
+        private int powerEffectConst = -1;
 
         public int AggressionEffect
         {
             get
             {
-                return AggressionEffectConst;
+                return this.aggressionEffectConst;
             }
         }
 
@@ -25,7 +19,7 @@ namespace Infestation
         {
             get
             {
-                return PowerEffectConst;
+                return this.powerEffectConst;
             }
         }
 
@@ -33,8 +27,8 @@ namespace Infestation
         {
             if (otherSupplement.GetType().Name == this.GetType().Name)
             {
-                this.AggressionEffectConst = 0;
-                this.PowerEffectConst = 0;
+                this.aggressionEffectConst = 0;
+                this.powerEffectConst = 0;
             }
         }
     }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Infestation
+﻿namespace Infestation
 {
     public class ExtendedHoldingPen : HoldingPen
     {
@@ -21,6 +16,7 @@ namespace Infestation
                     break;
             }
         }
+
         protected override void ExecuteInsertUnitCommand(string[] commandWords)
         {
             switch (commandWords[1])
@@ -42,6 +38,7 @@ namespace Infestation
                     break;
             }
         }
+
         protected override void ExecuteAddSupplementCommand(string[] commandWords)
         {
             ISupplement suplement = null;
@@ -63,6 +60,7 @@ namespace Infestation
                     base.ExecuteAddSupplementCommand(commandWords);
                     break;
             }
+
             var unit = this.GetUnit(commandWords[2]);
             if (unit != null)
             {

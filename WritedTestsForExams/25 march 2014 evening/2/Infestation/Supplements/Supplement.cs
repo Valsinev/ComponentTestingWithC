@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Infestation
+﻿namespace Infestation
 {
     public abstract class Supplement : ISupplement
     {
@@ -8,7 +6,7 @@ namespace Infestation
         private int healthEffect;
         private int powerEffect;
 
-        public Supplement(int aggressionEffect,int healthEffect,int powerEffect)
+        public Supplement(int aggressionEffect, int healthEffect, int powerEffect)
         {
             this.AggressionEffect = aggressionEffect;
             this.HealthEffect = healthEffect;
@@ -21,6 +19,7 @@ namespace Infestation
             {
                 return this.aggressionEffect;
             }
+
             protected set
             {
                 this.aggressionEffect = value;
@@ -33,6 +32,7 @@ namespace Infestation
             {
                 return this.healthEffect;
             }
+
             protected set
             {
                 this.healthEffect = value;
@@ -45,6 +45,7 @@ namespace Infestation
             {
                 return this.powerEffect;
             }
+
             protected set
             {
                 this.powerEffect = value;
@@ -53,7 +54,6 @@ namespace Infestation
 
         public virtual void ReactTo(ISupplement otherSupplement)
         {
-            //
         }
     }
 }

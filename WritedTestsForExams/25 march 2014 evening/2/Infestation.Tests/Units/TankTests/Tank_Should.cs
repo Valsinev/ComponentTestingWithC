@@ -1,40 +1,40 @@
-﻿namespace Infestation.Tests.Units.HumanTests
+﻿namespace Infestation.Tests.Units.TankTests
 {
     using NUnit.Framework;
 
     [TestFixture]
-    public class Human_Should
+    public class Tank_Should
     {
         [Test]
         public void CreateAnInstance()
         {
-            var human = new Human("Pesho");
+            var tank = new Tank("Panzer");
 
-            Assert.IsInstanceOf(typeof(Human), human);
+            Assert.IsInstanceOf(typeof(Tank), tank);
         }
 
         [Test]
         public void ReturnCorrectPowerValue_WhenProperyPowerIsCalled()
         {
-            var human = new Human("Pesho");
+            var tank = new Tank("Panzer");
 
-            Assert.AreEqual(4, human.Power);
+            Assert.AreEqual(25, tank.Power);
         }
 
         [Test]
         public void ReturnCorrectAggressionValue_WhenProperyAggressionIsCalled()
         {
-            var human = new Human("Pesho");
+            var tank = new Tank("Panzer");
 
-            Assert.AreEqual(1, human.Aggression);
+            Assert.AreEqual(25, tank.Aggression);
         }
 
         [Test]
         public void ReturnCorrectHealthValue_WhenProperyHealthIsCalled()
         {
-            var human = new Human("Pesho");
+            var tank = new Tank("Panzer");
 
-            Assert.AreEqual(10, human.Health);
+            Assert.AreEqual(20, tank.Health);
         }
     }
 }

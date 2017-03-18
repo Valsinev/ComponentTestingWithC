@@ -1,12 +1,7 @@
-﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Infestation.Tests.Supplements.HealthCatalystTests
+﻿namespace Infestation.Tests.Supplements.HealthCatalystTests
 {
+    using NUnit.Framework;
+
     [TestFixture]
     public class HealthCatalyst_Should
     {

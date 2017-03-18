@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Infestation
+﻿namespace Infestation
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    
     public class HoldingPen
     {
         private List<Unit> containedUnits = new List<Unit>();
@@ -15,8 +14,7 @@ namespace Infestation
 
             string[] commandWords = command.Split(commandWordSeparators, StringSplitOptions.RemoveEmptyEntries);
 
-            DispatchCommand(commandWords);
-
+            this.DispatchCommand(commandWords);
         }
 
         protected virtual void DispatchCommand(string[] commandWords)
@@ -39,15 +37,7 @@ namespace Infestation
                     break;
             }
         }
-
-        private void ExecutePrintStatusCommand()
-        {
-            foreach (var unit in this.containedUnits)
-            {
-                Console.WriteLine(unit);
-            }
-        }
-
+        
         protected virtual void ExecuteAddSupplementCommand(string[] commandWords)
         {
             throw new NotImplementedException();
@@ -93,7 +83,8 @@ namespace Infestation
         protected Unit GetUnit(UnitInfo unitInfo)
         {
             return this.GetUnit(unitInfo.Id);
-            //return this.containedUnits.FirstOrDefault((unit) => unit.Id == unitInfo.Id);
+
+            // return this.containedUnits.FirstOrDefault((unit) => unit.Id == unitInfo.Id);
         }
 
         protected virtual void ExecuteInsertUnitCommand(string[] commandWords)
@@ -116,6 +107,14 @@ namespace Infestation
         protected void InsertUnit(Unit unit)
         {
             this.containedUnits.Add(unit);
+        }
+
+        private void ExecutePrintStatusCommand()
+        {
+            foreach (var unit in this.containedUnits)
+            {
+                Console.WriteLine(unit);
+            }
         }
     }
 }

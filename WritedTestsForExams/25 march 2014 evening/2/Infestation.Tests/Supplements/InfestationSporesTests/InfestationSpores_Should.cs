@@ -1,8 +1,7 @@
-﻿using NUnit.Framework;
-using System;
-
-namespace Infestation.Tests.Supplements.InfestationSporesTests
+﻿namespace Infestation.Tests.Supplements.InfestationSporesTests
 {
+    using NUnit.Framework;
+
     [TestFixture]
     public class InfestationSpores_Should
     {

@@ -1,40 +1,40 @@
-﻿namespace Infestation.Tests.Units.HumanTests
+﻿namespace Infestation.Tests.Units.QueenTests
 {
     using NUnit.Framework;
-
+    
     [TestFixture]
-    public class Human_Should
+    public class Queen_Should
     {
         [Test]
         public void CreateAnInstance()
         {
-            var human = new Human("Pesho");
+            var queen = new Queen("Tereza");
 
-            Assert.IsInstanceOf(typeof(Human), human);
+            Assert.IsInstanceOf(typeof(Queen), queen);
         }
 
         [Test]
         public void ReturnCorrectPowerValue_WhenProperyPowerIsCalled()
         {
-            var human = new Human("Pesho");
+            var queen = new Queen("Tereza");
 
-            Assert.AreEqual(4, human.Power);
+            Assert.AreEqual(1, queen.Power);
         }
 
         [Test]
         public void ReturnCorrectAggressionValue_WhenProperyAggressionIsCalled()
         {
-            var human = new Human("Pesho");
+            var queen = new Queen("Tereza");
 
-            Assert.AreEqual(1, human.Aggression);
+            Assert.AreEqual(1, queen.Aggression);
         }
 
         [Test]
         public void ReturnCorrectHealthValue_WhenProperyHealthIsCalled()
         {
-            var human = new Human("Pesho");
+            var queen = new Queen("Tereza");
 
-            Assert.AreEqual(10, human.Health);
+            Assert.AreEqual(30, queen.Health);
         }
     }
 }

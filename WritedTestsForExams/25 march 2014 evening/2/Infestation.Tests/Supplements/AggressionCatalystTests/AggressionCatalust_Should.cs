@@ -1,8 +1,7 @@
-﻿using NUnit.Framework;
-using System;
-
-namespace Infestation.Tests.Supplements.AggressionCatalystTests
+﻿namespace Infestation.Tests.Supplements.AggressionCatalystTests
 {
+    using NUnit.Framework;
+    
     [TestFixture]
     public class AggressionCatalust_Should
     {

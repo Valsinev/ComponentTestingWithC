@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Infestation
+﻿namespace Infestation
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    
     public class Queen : InfestUnit
     {
-        const int QueenHealth = 30;
-        const int QueenAggression = 1;
-        const int QueenPower = 1;
+        private const int QueenHealth = 30;
+        private const int QueenAggression = 1;
+        private const int QueenPower = 1;
 
-        public Queen(string id) 
+        public Queen(string id)
             : base(id, UnitClassification.Psionic, Queen.QueenHealth, Queen.QueenPower, Queen.QueenAggression)
         {
         }
+
         public override Interaction DecideInteraction(IEnumerable<UnitInfo> units)
         {
             IEnumerable<UnitInfo> attackableUnits = units.Where((unit) => this.CanAttackUnit(unit));
