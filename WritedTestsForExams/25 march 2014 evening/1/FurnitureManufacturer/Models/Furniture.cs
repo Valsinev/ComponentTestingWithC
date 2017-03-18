@@ -1,7 +1,5 @@
-﻿
-namespace FurnitureManufacturer.Models
+﻿namespace FurnitureManufacturer.Models
 {
-    using System;
     using FurnitureManufacturer.Interfaces;
 
     public abstract class Furniture : IFurniture
@@ -34,6 +32,7 @@ namespace FurnitureManufacturer.Models
             {
                 return this.height;
             }
+
             protected set
             {
                 Validator.ValidateDecimal(value, ErrorMessageForHeight);
@@ -47,6 +46,7 @@ namespace FurnitureManufacturer.Models
             {
                 return this.materialType;
             }
+
             protected set
             {
                 Validator.ValidateStringEmptyOrNull(value, ErrorMessageForMaterialType);
@@ -60,11 +60,11 @@ namespace FurnitureManufacturer.Models
             {
                 return this.model;
             }
+
             protected set
             {
                 Validator.ValidateStringEmptyOrNull(value, ErrorMessageForNullModel);
-                Validator.ValidateIntRange(value.Length, ModelMinLenght,ModelMaxLenght, 
-                    string.Format(ErrorMessageForModelRange ,ModelMinLenght));
+                Validator.ValidateIntRange(value.Length, ModelMinLenght, ModelMaxLenght, string.Format(ErrorMessageForModelRange, ModelMinLenght));
                 this.model = value;
             }
         }
@@ -82,10 +82,16 @@ namespace FurnitureManufacturer.Models
                 this.price = value;
             }
         }
+
         public override string ToString()
         {
-            return string.Format("Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}",
-            this.GetType().Name,this.Model,this.Material,this.Price ,this.Height);
+            return string.Format(
+                "Type: {0}, Model: {1}, Material: {2}, Price: {3}, Height: {4}",
+            this.GetType().Name, 
+            this.Model,
+            this.Material, 
+            this.Price,
+            this.Height);
         }
     }
 }

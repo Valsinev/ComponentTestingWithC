@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FurnitureManufacturer.Models
+﻿namespace FurnitureManufacturer.Models
 {
+    using System;
+    using System.Linq;
+
     public static class Validator
     {
         public static void ValidateDecimal(decimal input, string message = null)
@@ -15,6 +12,7 @@ namespace FurnitureManufacturer.Models
                 throw new ArgumentException(message);
             }
         }
+
         public static void ValidateStringEmptyOrNull(string input, string message = null)
         {
             if (string.IsNullOrEmpty(input))
@@ -22,21 +20,24 @@ namespace FurnitureManufacturer.Models
                 throw new ArgumentNullException(message);
             }
         }
-        public static void ValidateIntRange(int input,int minLenght = int.MinValue, int maxLenght = int.MaxValue, string message = null)
+
+        public static void ValidateIntRange(int input, int minLenght = int.MinValue, int maxLenght = int.MaxValue, string message = null)
         {
             if (input < minLenght || input > maxLenght)
             {
                 throw new IndexOutOfRangeException(message);
             }
         }
-        public static void VlidateIfDigitOnly(string input,string message = null)
+
+        public static void VlidateIfDigitOnly(string input, string message = null)
         {
             if (!input.All(char.IsDigit))
             {
                 throw new ArgumentException(message);
             }
         }
-        public static void ValidateNullObject(object input,string message = null)
+
+        public static void ValidateNullObject(object input, string message = null)
         {
             if (input == null)
             {

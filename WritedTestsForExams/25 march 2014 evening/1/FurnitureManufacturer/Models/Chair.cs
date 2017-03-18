@@ -1,5 +1,4 @@
-﻿
-namespace FurnitureManufacturer.Models
+﻿namespace FurnitureManufacturer.Models
 {
     using System;
     using FurnitureManufacturer.Interfaces;
@@ -10,7 +9,7 @@ namespace FurnitureManufacturer.Models
         private int numberOfLegs;
 
         public Chair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
-            :base(model,materialType,price,height)
+            : base(model, materialType, price, height)
         {
             this.NumberOfLegs = numberOfLegs;
         }
@@ -21,15 +20,18 @@ namespace FurnitureManufacturer.Models
             {
                 return this.numberOfLegs;
             }
+
             protected set
             {
-                if (value <= 0 )
+                if (value <= 0)
                 {
                     throw new ArgumentException("Chair legs cannot be 0 or less!");
                 }
+
                 this.numberOfLegs = value;
             }
         }
+
         public override string ToString()
         {
             return base.ToString() + string.Format("Legs: {0}", this.NumberOfLegs);

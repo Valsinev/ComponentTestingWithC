@@ -1,8 +1,7 @@
-﻿using System;
-using FurnitureManufacturer.Interfaces;
-
-namespace FurnitureManufacturer.Models
+﻿namespace FurnitureManufacturer.Models
 {
+    using FurnitureManufacturer.Interfaces;
+
     public class ConvertibleChair : Chair, IConvertibleChair
     {
         private const decimal ConvertedHeight = 0.10m;
@@ -11,7 +10,7 @@ namespace FurnitureManufacturer.Models
         private decimal innitialHeight;
 
         public ConvertibleChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
-            :base(model,materialType,price,height,numberOfLegs)
+            : base(model, materialType, price, height, numberOfLegs)
         {
             this.isConverted = false;
             this.innitialHeight = this.Height;
@@ -38,6 +37,7 @@ namespace FurnitureManufacturer.Models
                 this.isConverted = !this.isConverted;
             }
         }
+
         public override string ToString()
         {
             var convertedToString = this.IsConverted ? "Converted" : "Normal";
