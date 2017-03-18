@@ -1,11 +1,12 @@
-﻿using ArmyOfCreatures.Extended;
-using ArmyOfCreatures.Extended.Creatures;
-using ArmyOfCreatures.Logic.Creatures;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Logic.CreaturesFactoryTests
+﻿namespace ArmyOfCreatures.Tests.Logic.CreaturesFactoryTests
 {
+    using System;
+
+    using ArmyOfCreatures.Extended;
+    using ArmyOfCreatures.Extended.Creatures;
+    using ArmyOfCreatures.Logic.Creatures;
+    using NUnit.Framework;
+
     [TestFixture]
     public class ExtendedCreaturesFactory_Should
     {

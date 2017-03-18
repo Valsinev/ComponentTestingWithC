@@ -1,9 +1,8 @@
-﻿using ArmyOfCreatures.Logic.Specialties;
-using System;
-using ArmyOfCreatures.Logic.Battles;
-
-namespace ArmyOfCreatures.Tests.MockedClasses
+﻿namespace ArmyOfCreatures.Tests.MockedClasses
 {
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Specialties;
+
     public class SpecialityMock : Specialty
     {
         public override void ApplyWhenAttacking(ICreaturesInBattle attackerWithSpecialty, ICreaturesInBattle defender)

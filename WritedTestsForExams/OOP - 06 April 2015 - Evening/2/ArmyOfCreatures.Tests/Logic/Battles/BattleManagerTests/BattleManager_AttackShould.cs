@@ -1,13 +1,14 @@
-﻿using ArmyOfCreatures.Logic;
-using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using ArmyOfCreatures.Tests.MockedClasses;
-using Moq;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Logic.Battles.BattleManagerTests
+﻿namespace ArmyOfCreatures.Tests.Logic.Battles.BattleManagerTests
 {
+    using System;
+
+    using ArmyOfCreatures.Logic;
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using ArmyOfCreatures.Tests.MockedClasses;
+    using Moq;
+    using NUnit.Framework;
+
     [TestFixture]
     public class BattleManager_AttackShould
     {

@@ -1,10 +1,11 @@
-﻿using Cosmetics.Common;
-using Cosmetics.Products;
-using NUnit.Framework;
-using System;
-
-namespace Cosmetics.Tests.Products.ShampooTests
+﻿namespace Cosmetics.Tests.Products.ShampooTests
 {
+    using System;
+
+    using Cosmetics.Common;
+    using Cosmetics.Products;
+    using NUnit.Framework;
+
     [TestFixture]
     public class Shampoo_Should
     {

@@ -1,12 +1,13 @@
-﻿using Cosmetics.Common;
-using Cosmetics.Engine;
-using Cosmetics.Products;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-
-namespace Cosmetics.Tests.Engine.CosmeticsFactoryTests
+﻿namespace Cosmetics.Tests.Engine.CosmeticsFactoryTests
 {
+    using System;
+    using System.Collections.Generic;
+
+    using Cosmetics.Common;
+    using Cosmetics.Engine;
+    using Cosmetics.Products;
+    using NUnit.Framework;
+
     [TestFixture]
     public class CosmeticsFactory_Should
     {

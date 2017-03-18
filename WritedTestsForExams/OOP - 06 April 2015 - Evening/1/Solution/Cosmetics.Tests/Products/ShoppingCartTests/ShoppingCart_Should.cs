@@ -1,10 +1,11 @@
-﻿using Cosmetics.Common;
-using Cosmetics.Products;
-using NUnit.Framework;
-using System;
-
-namespace Cosmetics.Tests.Products.ShoppingCartTests
+﻿namespace Cosmetics.Tests.Products.ShoppingCartTests
 {
+    using System;
+
+    using Cosmetics.Common;
+    using Cosmetics.Products;
+    using NUnit.Framework;
+
     [TestFixture]
     public class ShoppingCart_Should
     {

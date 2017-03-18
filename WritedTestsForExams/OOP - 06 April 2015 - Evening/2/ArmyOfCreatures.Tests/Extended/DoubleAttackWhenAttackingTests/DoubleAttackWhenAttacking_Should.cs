@@ -1,11 +1,12 @@
-﻿using ArmyOfCreatures.Extended.Specialties;
-using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Extended.DoubleAttackWhenAttackingTests
+﻿namespace ArmyOfCreatures.Tests.Extended.DoubleAttackWhenAttackingTests
 {
+    using System;
+
+    using ArmyOfCreatures.Extended.Specialties;
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using NUnit.Framework;
+
     [TestFixture]
     public class DoubleAttackWhenAttacking_Should
     {

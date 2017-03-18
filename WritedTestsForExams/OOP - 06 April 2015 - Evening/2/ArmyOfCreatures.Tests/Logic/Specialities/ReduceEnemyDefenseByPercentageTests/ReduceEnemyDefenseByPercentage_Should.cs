@@ -1,11 +1,12 @@
-﻿using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using ArmyOfCreatures.Logic.Specialties;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Logic.Specialities.ReduceEnemyDefenseByPercentageTests
+﻿namespace ArmyOfCreatures.Tests.Logic.Specialities.ReduceEnemyDefenseByPercentageTests
 {
+    using System;
+
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using ArmyOfCreatures.Logic.Specialties;
+    using NUnit.Framework;
+
     [TestFixture]
     public class ReduceEnemyDefenseByPercentage_Should
     {

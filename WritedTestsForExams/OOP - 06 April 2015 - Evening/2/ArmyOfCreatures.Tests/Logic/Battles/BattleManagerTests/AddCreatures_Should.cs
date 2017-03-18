@@ -1,12 +1,13 @@
-﻿using ArmyOfCreatures.Logic;
-using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using Moq;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Battles.BattleManagerTests
+﻿namespace ArmyOfCreatures.Tests.Battles.BattleManagerTests
 {
+    using System;
+
+    using ArmyOfCreatures.Logic;
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using Moq;
+    using NUnit.Framework;
+
     [TestFixture]
     public class AddCreatures_Should
     {

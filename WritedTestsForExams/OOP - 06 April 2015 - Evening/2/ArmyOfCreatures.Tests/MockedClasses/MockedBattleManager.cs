@@ -1,16 +1,14 @@
-﻿using ArmyOfCreatures.Logic.Battles;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ArmyOfCreatures.Logic;
-using ArmyOfCreatures.Logic.Creatures;
-using System.Globalization;
-using ArmyOfCreatures.Extended;
-
-namespace ArmyOfCreatures.Tests.MockedClasses
+﻿namespace ArmyOfCreatures.Tests.MockedClasses
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.Linq;
+
+    using ArmyOfCreatures.Extended;
+    using ArmyOfCreatures.Logic;
+    using ArmyOfCreatures.Logic.Battles;
+    
     public class MockedBattleManager : ExtendedBattleManager
     {
         public MockedBattleManager(ICreaturesFactory creaturesFactory, ILogger logger)

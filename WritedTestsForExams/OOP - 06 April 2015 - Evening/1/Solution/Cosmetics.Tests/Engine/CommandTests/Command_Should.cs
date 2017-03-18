@@ -1,10 +1,11 @@
-﻿using Cosmetics.Engine;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-
-namespace Cosmetics.Tests.Engine.CommandTests
+﻿namespace Cosmetics.Tests.Engine.CommandTests
 {
+    using System;
+    using System.Collections.Generic;
+
+    using Cosmetics.Engine;
+    using NUnit.Framework;
+
     [TestFixture]
     public class Command_Should
     {

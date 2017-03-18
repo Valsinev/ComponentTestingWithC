@@ -1,11 +1,10 @@
-﻿using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using ArmyOfCreatures.Tests.MockedClasses;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Logic.Specialities
+﻿namespace ArmyOfCreatures.Tests.Logic.Specialities
 {
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using ArmyOfCreatures.Tests.MockedClasses;
+    using NUnit.Framework;
+    
     [TestFixture]
     public class Speciality_Should
     {

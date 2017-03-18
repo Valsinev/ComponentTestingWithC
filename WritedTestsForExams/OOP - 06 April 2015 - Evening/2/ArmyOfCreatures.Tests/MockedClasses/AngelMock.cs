@@ -1,7 +1,7 @@
-﻿using ArmyOfCreatures.Logic.Creatures;
-
-namespace ArmyOfCreatures.Tests.MockedClasses
+﻿namespace ArmyOfCreatures.Tests.MockedClasses
 {
+    using ArmyOfCreatures.Logic.Creatures;
+    
     public class AngelMock : Creature
     {
         public AngelMock()

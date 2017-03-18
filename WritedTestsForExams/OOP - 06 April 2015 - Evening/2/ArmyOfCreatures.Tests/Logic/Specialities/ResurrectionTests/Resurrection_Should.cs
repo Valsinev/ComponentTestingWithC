@@ -1,13 +1,12 @@
-﻿using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using ArmyOfCreatures.Logic.Specialties;
-using ArmyOfCreatures.Tests.MockedClasses;
-using Moq;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Logic.Specialities.ResurrectionTests
+﻿namespace ArmyOfCreatures.Tests.Logic.Specialities.ResurrectionTests
 {
+    using System;
+
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using ArmyOfCreatures.Logic.Specialties;
+    using NUnit.Framework;
+
     [TestFixture]
     public class Resurrection_Should
     {

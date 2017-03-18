@@ -7,7 +7,6 @@
 
     public class DoubleAttackWhenAttacking : Specialty
     {
-        private int innitialAttack;
         private int rounds;
 
         public DoubleAttackWhenAttacking(int rounds)

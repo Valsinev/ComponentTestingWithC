@@ -1,9 +1,9 @@
-﻿using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using NUnit.Framework;
-
-namespace ArmyOfCreatures.Tests.Logic.Battles.CreaturesInBattleTests.Skip
+﻿namespace ArmyOfCreatures.Tests.Logic.Battles.CreaturesInBattleTests.Skip
 {
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using NUnit.Framework;
+    
     [TestFixture]
     public class CreaturesInBattle_SkipShould
     {

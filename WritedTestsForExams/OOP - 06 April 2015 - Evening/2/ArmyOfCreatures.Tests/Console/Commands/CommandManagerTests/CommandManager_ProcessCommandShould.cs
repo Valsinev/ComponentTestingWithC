@@ -1,11 +1,12 @@
-﻿using ArmyOfCreatures.Console.Commands;
-using ArmyOfCreatures.Logic.Battles;
-using Moq;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Commands.CommandManagerTests
+﻿namespace ArmyOfCreatures.Tests.Commands.CommandManagerTests
 {
+    using System;
+
+    using ArmyOfCreatures.Console.Commands;
+    using ArmyOfCreatures.Logic.Battles;
+    using Moq;
+    using NUnit.Framework;
+
     [TestFixture]
     public class CommandManager_ProcessCommandShould
     {

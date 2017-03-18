@@ -1,10 +1,11 @@
-﻿using Cosmetics.Engine;
-using Moq;
-using NUnit.Framework;
-using System;
-
-namespace Cosmetics.Tests.Engine.CosmeticsEngineTests
+﻿namespace Cosmetics.Tests.Engine.CosmeticsEngineTests
 {
+    using System;
+
+    using Cosmetics.Engine;
+    using Moq;
+    using NUnit.Framework;
+    
     [TestFixture]
     public class CosmeticsEngine_Should
     {

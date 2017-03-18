@@ -1,10 +1,11 @@
-﻿using Cosmetics.Common;
-using Cosmetics.Products;
-using NUnit.Framework;
-using System;
-
-namespace Cosmetics.Tests.Products.CategoryTests
+﻿namespace Cosmetics.Tests.Products.CategoryTests
 {
+    using System;
+
+    using Cosmetics.Common;
+    using Cosmetics.Products;
+    using NUnit.Framework;
+
     [TestFixture]
     public class Category_Should
     {

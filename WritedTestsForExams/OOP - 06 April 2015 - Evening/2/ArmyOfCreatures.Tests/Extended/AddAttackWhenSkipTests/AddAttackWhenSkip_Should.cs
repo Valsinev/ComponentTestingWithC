@@ -1,11 +1,12 @@
-﻿using ArmyOfCreatures.Extended.Specialties;
-using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Extended.AddAttackWhenSkipTests
+﻿namespace ArmyOfCreatures.Tests.Extended.AddAttackWhenSkipTests
 {
+    using System;
+
+    using ArmyOfCreatures.Extended.Specialties;
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using NUnit.Framework;
+
     [TestFixture]
     public class AddAttackWhenSkip_Should
     {

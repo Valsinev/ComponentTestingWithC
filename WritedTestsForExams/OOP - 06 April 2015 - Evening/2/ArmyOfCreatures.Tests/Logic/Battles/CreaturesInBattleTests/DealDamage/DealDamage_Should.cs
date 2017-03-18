@@ -1,10 +1,11 @@
-﻿using ArmyOfCreatures.Logic.Battles;
-using ArmyOfCreatures.Logic.Creatures;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Logic.Battles.CreaturesInBattleTests.DealDamage
+﻿namespace ArmyOfCreatures.Tests.Logic.Battles.CreaturesInBattleTests.DealDamage
 {
+    using System;
+
+    using ArmyOfCreatures.Logic.Battles;
+    using ArmyOfCreatures.Logic.Creatures;
+    using NUnit.Framework;
+
     [TestFixture]
     public class DealDamage_Should
     {

@@ -1,9 +1,10 @@
-﻿using ArmyOfCreatures.Logic.Battles;
-using NUnit.Framework;
-using System;
-
-namespace ArmyOfCreatures.Tests.Logic.Battles.CreatureIdentifierTests
+﻿namespace ArmyOfCreatures.Tests.Logic.Battles.CreatureIdentifierTests
 {
+    using System;
+
+    using ArmyOfCreatures.Logic.Battles;
+    using NUnit.Framework;
+
     [TestFixture]
     public class CreatureIdentifier_Should
     {

@@ -1,11 +1,12 @@
-﻿using Cosmetics.Common;
-using Cosmetics.Products;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-
-namespace Cosmetics.Tests.Products.ToothpasteTests
+﻿namespace Cosmetics.Tests.Products.ToothpasteTests
 {
+    using System;
+    using System.Collections.Generic;
+
+    using Cosmetics.Common;
+    using Cosmetics.Products;
+    using NUnit.Framework;
+
     [TestFixture]
     public class Toothpaste_Should
     {
