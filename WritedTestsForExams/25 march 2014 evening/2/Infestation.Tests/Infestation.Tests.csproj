@@ -53,11 +53,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Supplements\AggressionCatalystTests\AggressionCatalust_Should.cs" />
+    <Compile Include="Supplements\WeaponarySkillTests\WeaponarySkill_Should.cs" />
+    <Compile Include="Supplements\WeaponTests\Weapon_Should.cs" />
     <Compile Include="Units\DogTests\Dog_Should.cs" />
     <Compile Include="Supplements\HealthCatalystTests\HealthCatalyst_Should.cs" />
     <Compile Include="Units\HumanTests\Human_Should.cs" />
     <Compile Include="Supplements\InfestationSporesTests\InfestationSpores_Should.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Units\MarineTests\Marine_Should.cs" />
     <Compile Include="Units\ParasiteTests\Parasite_Should.cs" />
     <Compile Include="Units\QueenTests\Queen_Should.cs" />
     <Compile Include="Units\TankTests\Tank_Should.cs" />

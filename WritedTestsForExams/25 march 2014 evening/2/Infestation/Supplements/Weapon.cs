@@ -17,8 +17,8 @@
         {
             if (otherSupplement is WeaponrySkill)
             {
-                this.AggEffectAdd += 3;
-                this.PowEffectAdd += 10;
+                this.AggressionEffect += 3;
+                this.PowerEffect += 10;
             }
         }
     }

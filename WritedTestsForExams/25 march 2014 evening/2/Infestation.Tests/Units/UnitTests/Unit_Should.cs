@@ -1,11 +1,16 @@
 ﻿namespace Infestation.Tests.Units.UnitTests
 {
+    using System;
+    using System.Collections.Generic;
+
     using Moq;
     using NUnit.Framework;
 
     [TestFixture]
     public class Unit_Should
     {
+        private UnitInfo dog;
+
         [Test]
         public void ReturnCorrechHealthValue_WhenDecreaseBaseHealthIsCalled()
         {
@@ -122,6 +127,60 @@
                 "Dog Sharo (Biological) [Health: 4, Power: 5, Aggression: 2, Supplements: []]";
 
             Assert.AreEqual(expected, dog.ToString());
+        }
+
+        [Test]
+        public void ReturnCorrectBonusAggression_WhenWeaponSupplementReactToWeaponarySkillSupplement()
+        {
+            var unit = new Tank("Panzer");
+
+            unit.AddSupplement(new WeaponrySkill());
+            unit.AddSupplement(new Weapon());
+            
+            Assert.AreEqual(28, unit.Aggression);
+        }
+
+        [Test]
+        public void ReturnCorrectBonusPower_WhenWeaponSupplementReactToWeaponarySkillSupplement()
+        {
+            var unit = new Tank("Panzer");
+
+            unit.AddSupplement(new WeaponrySkill());
+            unit.AddSupplement(new Weapon());
+
+            Assert.AreEqual(35, unit.Power);
+        }
+
+        [Test]
+        public void Attack_WhenCorrectConditionsArePassed()
+        {
+            var unit = new Tank("Panzer");
+
+            List<UnitInfo> units = new List<UnitInfo>();
+
+            var dog = new UnitInfo(new Dog("Tereza"));
+
+            units.Add(dog);
+
+            var result = unit.DecideInteraction(units);
+            
+            Assert.AreEqual(InteractionType.Attack, result.InteractionType);
+        }
+
+        [Test]
+        public void ReturnNullInteraction_WhenUnitTryToAttackItself()
+        {
+            var unit = new Tank("Panzer");
+
+            List<UnitInfo> units = new List<UnitInfo>();
+
+            var tank = new UnitInfo(unit);
+
+            units.Add(tank);
+
+            var result = unit.DecideInteraction(units);
+
+            Assert.AreEqual(null, result);
         }
     }
 }
