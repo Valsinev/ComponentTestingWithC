@@ -107,7 +107,19 @@
             dog.AddSupplement(new AggressionCatalyst());
             dog.AddSupplement(new PowerCatalyst());
 
-            string expected = "Dog Sharo (Biological) [Health: 4, Power: 8, Aggression: 5, Supplements: [AggressionCatalyst, PowerCatalyst]]";
+            string expected = 
+                "Dog Sharo (Biological) [Health: 4, Power: 8, Aggression: 5, Supplements: [AggressionCatalyst, PowerCatalyst]]";
+
+            Assert.AreEqual(expected, dog.ToString());
+        }
+
+        [Test]
+        public void ReturnCorrectToStringWithNoSupplements_WhenToStringIsCalled()
+        {
+            var dog = new Dog("Sharo");
+
+            string expected = 
+                "Dog Sharo (Biological) [Health: 4, Power: 5, Aggression: 2, Supplements: []]";
 
             Assert.AreEqual(expected, dog.ToString());
         }

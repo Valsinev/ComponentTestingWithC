@@ -10,5 +10,10 @@
             base(id, UnitClassification.Biological, Dog.DogHealth, Dog.DogPower, Dog.DogAggression)
         {
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
