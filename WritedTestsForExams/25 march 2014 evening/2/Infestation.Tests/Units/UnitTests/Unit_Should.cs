@@ -9,8 +9,6 @@
     [TestFixture]
     public class Unit_Should
     {
-        private UnitInfo dog;
-
         [Test]
         public void ReturnCorrechHealthValue_WhenDecreaseBaseHealthIsCalled()
         {
