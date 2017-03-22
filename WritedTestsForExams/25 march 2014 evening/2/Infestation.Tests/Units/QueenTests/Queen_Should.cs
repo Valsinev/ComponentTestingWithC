@@ -1,7 +1,8 @@
 ﻿namespace Infestation.Tests.Units.QueenTests
 {
-    using NUnit.Framework;
     using System.Collections.Generic;
+
+    using NUnit.Framework;
 
     [TestFixture]
     public class Queen_Should

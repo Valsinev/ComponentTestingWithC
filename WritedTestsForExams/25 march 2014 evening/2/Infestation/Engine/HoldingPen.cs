@@ -75,12 +75,12 @@
             }
         }
 
-        protected Unit GetUnit(string unitId)
+        protected virtual Unit GetUnit(string unitId)
         {
             return this.containedUnits.FirstOrDefault((unit) => unit.Id == unitId);
         }
 
-        protected Unit GetUnit(UnitInfo unitInfo)
+        protected virtual Unit GetUnit(UnitInfo unitInfo)
         {
             return this.GetUnit(unitInfo.Id);
 
@@ -104,7 +104,7 @@
             }
         }
 
-        protected void InsertUnit(Unit unit)
+        protected virtual void InsertUnit(Unit unit)
         {
             this.containedUnits.Add(unit);
         }

@@ -1,7 +1,8 @@
 ﻿namespace Infestation.Tests.Engine.InfestationRequirementsTests
 {
-    using NUnit.Framework;
     using System;
+
+    using NUnit.Framework;
 
     [TestFixture]
     public class InfestationRequirements_Should

@@ -1,8 +1,8 @@
 ﻿namespace Infestation.Tests.Units.InfestUnitTests
 {
-    using Moq;
-    using NUnit.Framework;
     using System.Collections.Generic;
+
+    using NUnit.Framework;
 
     [TestFixture]
     public class InfestUnit_Should
