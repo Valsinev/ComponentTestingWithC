@@ -24,7 +24,7 @@
         public Company(string name, string registrationNumber)
         {
             this.Name = name;
-            this.registrationNumber = registrationNumber;
+            this.RegistrationNumber = registrationNumber;
             this.furnitures = new List<IFurniture>();
         }
 
@@ -80,7 +80,7 @@
         {
             var sortedFurnitures = this.furnitures.OrderBy(f => f.Price).ThenBy(f => f.Model);
             string furnituresOrNo = this.Furnitures.Count != 0 ? this.Furnitures.Count.ToString() : "no";
-            string ifPlural = this.Furnitures.Count != 1 ? "furnitures" : "furniture";
+            string ifPlural = this.Furnitures.Count == 1 ? "furniture" : "furnitures";
             var output = new StringBuilder();
             output.AppendLine(string.Format("{0} - {1} - {2} {3}", this.Name, this.RegistrationNumber, furnituresOrNo, ifPlural).Trim());
             foreach (var furniture in sortedFurnitures)
