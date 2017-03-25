@@ -52,10 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Engine\CommandTests\Command_Should.cs" />
+    <Compile Include="Engine\Factories\CompanyFactoryTests\CompanyFactory_Should.cs" />
+    <Compile Include="Engine\Factories\FurnitureFactoryTests\FurnitureFactory_Should.cs" />
     <Compile Include="Models\AdjustableChairTests\AdjustableChair_Should.cs" />
     <Compile Include="Models\ChairTests\Chair_Should.cs" />
     <Compile Include="Models\CompanyTests\Company_Should.cs" />
+    <Compile Include="Models\ConvertibleChairTests\ConvertibleChair_Should.cs" />
     <Compile Include="Models\FurnitureTests\Furniture_Should.cs" />
+    <Compile Include="Models\TableTests\Table_Should.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,9 +72,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Engine\Factories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>

@@ -26,7 +26,7 @@
 
         public void Convert()
         {
-            if (this.isConverted)
+            if (!this.isConverted)
             {
                 this.Height = ConvertedHeight;
                 this.isConverted = !this.isConverted;
